@@ -3,7 +3,7 @@ import requests
 
 REQUESTS_USERAGENT = 'ForkDelta Token Discovery 0.0.1'
 
-FORKDELTA_LISTINGS_URL = "https://rawgit.com/forkdelta/forkdelta.github.io/master/config/main.json"
+FORKDELTA_LISTINGS_URL = "https://rawgit.com/erupee/erupee.github.io/master/config/main.json"
 
 
 def get_forkdelta_listings(filepath_or_url=FORKDELTA_LISTINGS_URL):
@@ -65,7 +65,7 @@ def get_etherscan_notice(addr, html_doc=None):
     return None
 
 
-CMC_ETHDB_URL = "https://forkdelta.github.io/coinmarketcap-ethtoken-db/tokens/bundle.json"
+CMC_ETHDB_URL = "https://erupee.github.io/coinmarketcap-ethtoken-db/tokens/bundle.json"
 
 
 def get_cmc_ethdb_entry(addr):
@@ -74,7 +74,7 @@ def get_cmc_ethdb_entry(addr):
     return next(filter(matching_addr_predicate, ethdb), None)
 
 
-FORKDELTA_GUIDE_URL = "https://rawgit.com/forkdelta/forkdelta.github.io/master/tokenGuides/{}.ejs"
+FORKDELTA_GUIDE_URL = "https://rawgit.com/erupee/erupee.github.io/master/tokenGuides/{}.ejs"
 
 
 def get_forkdelta_guide(symbol):
