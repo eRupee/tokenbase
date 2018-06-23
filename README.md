@@ -1,4 +1,4 @@
-# ![eRupee](https://avatars2.githubusercontent.com/u/34236246?s=200&v=4) eRupee Tokenbase
+# ![eRupee](https://avatars2.githubusercontent.com/u/34236246?s=30&v=4) eRupee Tokenbase
 
 [![Build Status](https://travis-ci.org/forkdelta/tokenbase.svg?branch=master)](https://travis-ci.org/forkdelta/tokenbase) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/forkdelta/tokenbase/issues)
 
