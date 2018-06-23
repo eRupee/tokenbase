@@ -20,7 +20,7 @@ def twitter_style(token_info):
     """
     Blah Token $BLAH by [@blah_com|blah.com] is now available on ForkDelta:
 
-    https://forkdelta.github.io/#!/trade/BLAH-ETH
+    https://erupee.github.io/#!/trade/BLAH-ETH
 
     #{symbol} #ERC20 #gems #Ethereum #ICO #Crypto #cryptotrading
     """
@@ -37,13 +37,13 @@ def twitter_style(token_info):
     if "token" not in token_name.lower():
         token_name += " Token"
 
-    return "{token_name} ${symbol} by {issuer_attr} is now available on @ForkDelta: https://forkdelta.github.io/#!/trade/{symbol}-ETH \n\n#{symbol} #ERC20 #gems #Ethereum #ICO #Crypto #cryptotrading".format(
+    return "{token_name} ${symbol} by {issuer_attr} is now available on @ForkDelta: https://erupee.github.io/#!/trade/{symbol}-ETH \n\n#{symbol} #ERC20 #gems #Ethereum #ICO #Crypto #cryptotrading".format(
         token_name=token_name, symbol=symbol, issuer_attr=issuer_attr,
     )
 
 def twitter_short_style(token_info):
     """
-    Blah Token $BLAH by [@blah_com|blah.com] https://forkdelta.github.io/#!/trade/BLAH-ETH
+    Blah Token $BLAH by [@blah_com|blah.com] https://erupee.github.io/#!/trade/BLAH-ETH
     """
 
     twitter = get_link(token_info, "Twitter")
@@ -58,7 +58,7 @@ def twitter_short_style(token_info):
     if "token" not in token_name.lower():
         token_name += " Token"
 
-    return "{token_name} ${symbol} by {issuer_attr} https://forkdelta.github.io/#!/trade/{symbol}-ETH #{symbol}".format(
+    return "{token_name} ${symbol} by {issuer_attr} https://erupee.github.io/#!/trade/{symbol}-ETH #{symbol}".format(
         token_name=token_name, symbol=symbol, issuer_attr=issuer_attr,
     )
 
@@ -78,7 +78,7 @@ def reddit_style(token_info):
 
     > <description>
 
-    https://forkdelta.github.io/#!/trade/BLAH-ETH
+    https://erupee.github.io/#!/trade/BLAH-ETH
     """
 
     website = get_link(token_info, "Website")
@@ -92,7 +92,7 @@ def reddit_style(token_info):
 
     description_quote = "> {}".format("\n> ".join(token_info.get("description", "").split("\n")))
 
-    return "**{token_name} ${symbol}** by [{website_name}]({website})  \n{description_quote}\n\nhttps://forkdelta.github.io/#!/trade/{symbol}-ETH".format(
+    return "**{token_name} ${symbol}** by [{website_name}]({website})  \n{description_quote}\n\nhttps://erupee.github.io/#!/trade/{symbol}-ETH".format(
         token_name=token_name, symbol=symbol, description_quote=description_quote, website=website, website_name=website_name
     )
 
@@ -102,7 +102,7 @@ def telegram_style(token_info):
 
     > <description>
 
-    https://forkdelta.github.io/#!/trade/BLAH-ETH
+    https://erupee.github.io/#!/trade/BLAH-ETH
     """
 
     website = get_link(token_info, "Website")
@@ -116,7 +116,7 @@ def telegram_style(token_info):
 
     description_quote = "> {}".format("\n> ".join(token_info.get("description", "").split("\n")))
 
-    return "**{token_name} ${symbol}** by {website}  \n{description_quote}\n\nhttps://forkdelta.github.io/#!/trade/{symbol}-ETH".format(
+    return "**{token_name} ${symbol}** by {website}  \n{description_quote}\n\nhttps://erupee.github.io/#!/trade/{symbol}-ETH".format(
         token_name=token_name, symbol=symbol, description_quote=description_quote, website=website, website_name=website_name
     )
 
@@ -125,7 +125,7 @@ def discord_style(token_info):
     **Blah Token $BLAH** by <https://blah.com>
     >
 
-    <https://forkdelta.github.io/#!/trade/BLAH-ETH>
+    <https://erupee.github.io/#!/trade/BLAH-ETH>
     """
 
     website = get_link(token_info, "Website")
@@ -139,22 +139,22 @@ def discord_style(token_info):
 
     description_quote = "> {}".format("\n> ".join(token_info.get("description", "").split("\n")))
 
-    return "**{token_name} ${symbol}** by <{website}>  \n{description}  \n<https://forkdelta.github.io/#!/trade/{symbol}-ETH>".format(
+    return "**{token_name} ${symbol}** by <{website}>  \n{description}  \n<https://erupee.github.io/#!/trade/{symbol}-ETH>".format(
         token_name=token_name, description=description_quote, symbol=symbol, website=website
     )
 
 
 def github_response_style(token_info):
     """
-    Thank you for your request! $BLAH token has been listed: https://forkdelta.github.io/#!/trade/BLAH-ETH. We will announce it on our channels shortly.
+    Thank you for your request! $BLAH token has been listed: https://erupee.github.io/#!/trade/BLAH-ETH. We will announce it on our channels shortly.
 
-    If you like our project, please consider [donating](https://forkdelta.github.io/about/#donate). Your donations keep the project running and are always appreciated.
+    If you like our project, please consider [donating](https://erupee.github.io/about/#donate). Your donations keep the project running and are always appreciated.
     """
 
     symbol = token_info["symbol"] if not "__FORKDELTA_CUSTOM_SYMBOL" in token_info else token_info["__FORKDELTA_CUSTOM_SYMBOL"]
 
-    return "Thank you for your request! {name} has been listed: https://forkdelta.github.io/#!/trade/{symbol}-ETH".format(name=token_info["name"], symbol=symbol) \
-        + "\n\nIf you like our project, please consider [donating](https://forkdelta.github.io/about/#donate). Your donations keep the project running and are always appreciated."
+    return "Thank you for your request! {name} has been listed: https://erupee.github.io/#!/trade/{symbol}-ETH".format(name=token_info["name"], symbol=symbol) \
+        + "\n\nIf you like our project, please consider [donating](https://erupee.github.io/about/#donate). Your donations keep the project running and are always appreciated."
 
 
 STYLE_TO_FUNC = {
