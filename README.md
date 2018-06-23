@@ -1,4 +1,4 @@
-# ![eRupee logo](https://erupee.github.io/next/favicon-32x32.png) eRupee Tokenbase
+# ![ForkDelta logo](https://erupee.github.io/next/favicon-32x32.png) eRupee Tokenbase
 
 [![Build Status](https://travis-ci.org/forkdelta/tokenbase.svg?branch=master)](https://travis-ci.org/forkdelta/tokenbase) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](https://github.com/forkdelta/tokenbase/issues)
 
